@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>HBAI 2024: Joint Workshop on Human Brain and Artificial Intelligence</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/brain.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" /> -->
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <style type="text/css">
+            body {
+                    font-family: Arial, sans-serif;
+                    background-color: #ffffff;
+                    /* 没有父元素，无法转换为 em */
+                }
+
+                .lin {
+                    text-align: center;
+                    font-size: 1.5em; /* 24px / 16px = 1.5em */
+                }
+
+                .note {
+                    text-align: center;
+                    color: red;
+                    /* 没有字体大小，无法转换为 em */
+                }
+
+                h1 {
+                    text-align: center;
+                    font-size: 1.875em; /* 30px / 16px = 1.875em */
+                }
+
+                th {
+                    text-align: center;
+                    /* 没有字体大小，无法转换为 em */
+                }
+
+                p {
+                    text-align: justify;
+                    margin-left: 6.25em; /* 100px / 16px = 6.25em */
+                    margin-right: 6.25em; /* 100px / 16px = 6.25em */
+                    font-size: 1.4375em; /* 23px / 16px = 1.4375em */
+                }
+
+                /*#home td {*/
+                /*    font-size: 1.125em; !* 18px / 16px = 1.125em *!*/
+                /*}*/
+
+                /*td.option1 {*/
+                /*    padding-left: 3.75em; !* 60px / 16px = 3.75em *!*/
+                /*    padding-right: -0.625em; !* -10px / 16px = -0.625em *!*/
+                /*    font-size: 1em; !* 16px / 16px = 1em *!*/
+                /*}*/
+
+                /*td.option2 {*/
+                /*    padding-left: 0.625em; !* 10px / 16px = 0.625em *!*/
+                /*    padding-right: 0.625em; !* 10px / 16px = 0.625em *!*/
+                /*    font-size: 1em; !* 16px / 16px = 1em *!*/
+                /*}*/
+
+                /*td.option3 {*/
+                /*    padding-left: 0.625em; !* 10px / 16px = 0.625em *!*/
+                /*    padding-right: 0.625em; !* 10px / 16px = 0.625em *!*/
+                /*    font-size: 1em; !* 16px / 16px = 1em *!*/
+                /*}*/
+
+                div.spacer {
+                    width: 100%;
+                    height: 12.5em; /* 200px / 16px = 12.5em */
+                }
+
+                ul {
+                    font-size: 1.4375em; /* 23px / 16px = 1.4375em */
+                    text-align: justify;
+                    margin-left: 6.25em; /* 100px / 16px = 6.25em */
+                    margin-right: 6.25em; /* 100px / 16px = 6.25em */
+                }
+
+
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary  fixed-top" id="mainNav">
+            <div class="container justify-content-center">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"  style="font-size:x-large">HBAI 2024: Joint Workshop on Human Brain and Artificial Intelligence</a>
+                <button class="navbar-toggler navbar-toggler-right  font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+                 </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto" style="font-size: medium">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#organizing_committee">Organizing Committee</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#programm_committee">Programm Committee</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#paper_submission">Paper Submission</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#program">Program</a></li>
+                </ul>
+                 </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead text-black mb-0 pb-0">
+            <div class=" d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" /> -->
+                <!-- Masthead Heading-->
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                  <!-- 指示符 -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+
+                  <!-- 轮播图片 -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="img-fluid rounded mb-5" src="assets/img/HBAI_2024.png">
+                    </div>
+                  </div>
+<!--                  &lt;!&ndash; 左右切换按钮 &ndash;&gt;-->
+<!--                  <a class="carousel-control-prev" href="#demo" data-slide="prev">-->
+<!--                    <span class="carousel-control-prev-icon"></span>-->
+<!--                  </a>-->
+<!--                  <a class="carousel-control-next" href="#demo" data-slide="next">-->
+<!--                    <span class="carousel-control-next-icon"></span>-->
+<!--                  </a>-->
+                </div>
+
+            </div>
+        </header>
+        <section class = "page-section text-black mt-0 pt-0">
+            <div id = home class = "container">
+                    <h1 >Call for Papers</h1>
+                    <h4 class="lin"  >HBAI 2024: Joint Workshop on Human Brain and Artificial Intelligence</h4>
+                    <h4 class="lin" >August 3 to 9, 2024 - Jeju, South Korea</h4>
+                    <p class="p-1 m-1">Welcome to HBAI 2024, joint workshop of the 33rd International Joint Conference on Artificial Intelligence and the 25th European Conference on Artificial Intelligence (<a href="https://ijcai24.org/">IJCAI-ECAI 2024</a>)! The quest for brain research is to uncover the nature of brain cognition, consciousness, and intelligence. Simultaneously, Artificial Intelligence (AI) strives to craft intelligence within machines. The development of these two fields is undergoing a continuous trend of crossvergence and convergence. To bring together active researchers and practitioners in the frontiers of Artificial Intelligence and Human Brain Research for the presentation of original research results and to provide an opportunity for the exchange and dissemination of innovative research ideas relevant to both fields, we propose this workshop, called Human Brain and Artificial Intelligence (HBAI). HBAI will contribute to answering the following two questions: How can AI techniques help to human brain research ((AI- inspired/powered brain research)? And, how can human brain research inspire the study of AI (brain-inspired computing)? The discussion on the workshop will clearly be greatly helpful to the brain and cognitive science, neural computation and artificial general intelligence, brain-machine interface, data science, and their applications. . </h6>
+
+                    <h1  >Aims and Scope</h1>
+                    <p class="p-1 m-1">The development of new technologies for recording brain structure and function has led to a proliferation of massive data sets (‘big data’) recording neural processes associated with human cognition. AI has played an increasingly important role in the analysis of sequence, structure and functional patterns or models from the big data about the human brain. Computational brain science aims to: 1) mathematically model, quantitatively analyze, and mechanistically understand human brain; 2) develop theory, algorithms and software for building computer systems that can perform human-brain-like functions. The main outcome of this workshop is to present latest results in this exciting area at the intersection of the human brain research and AI.</p>
+                    <p class="p-1 m-1">AI approaches can revolutionize new age of brain informatics and computational brain science with discoveries in human brain-related health, diseases, social behavior, neuroscience, brain connectivity, brain intelligence paradigms, cognitive information, etc.</p>
+                    <p class="p-1 m-1">Human brain research provides opportunities for developing novel AI methods. Some of the grand challenges in human brain research include global mental health and neuroscience, brain wellness and aging, cognitive development, brain energetics in health and diseases, neuroimaging, models of disorders, as well as applications in neuroinformatics, brain computer/machine interfaces, etc.</p>
+                    <p class="p-1 m-1">This 1-day workshop lets researchers present and discuss their research, share their knowledge and experiences, and discuss the current state of the art and the future improvements to advance the intelligent practice of computational brain.</p>
+
+                    <h1 class="p-1 m-1">Workshop topics</h1>
+                    <p class="p-1 m-1">We encourage papers with important new insights and experiences on artificial intelligence from the modeling and simulation of human brain systems. Those contributions should shed light on one of the two questions mentioned above. Topics of interest lie at the intersection of AI and computational brain science. They include, but are not limited to, the following inter-linked topics:</p>
+                    <br>
+
+
+                    <table class = "align-top">
+                        <tr>
+                            <td class = "align-top"><h3>AI-inspired brain research: </h3></td>
+                            <td class = "align-top"><h3>AI-powered brain research: </h3></td>
+                            <td class = "align-top"><h3>Brain-inspired computing: </h3></td>
+                        </tr>
+                        <tr>
+                            <td class = "align-top" style="font-size: 20px">- 	Brain development and aging<br />
+                                - 	Brain connectivity and network modeling<br />
+                                -   Brain intelligence paradigms<br />
+                                -  	Neuroinformatics<br />
+                                - 	Learning and memory<br />
+                                - 	Genetic and circuit mechanisms<br />
+                                -	Cognition and behavior<br />
+                                - 	Perception (spatial, temporal) and imagery<br />
+                                - 	Sleep behavior<br />
+                                - 	Hot topics in human brain-related health/diseases/social behavior<br />
+                            </td>
+
+                            <td class = "align-top" style="font-size: 20px">-	Brain network data analysis<br />
+                                -	Brain cognitive data (EEG/eye movement, etc.)<br />
+                                -	Brain image data (MRI /fNIRS, etc.)<br />
+                                -	Brain omics data<br />
+                                -	Brain-computer Interface<br />
+                                -	Neuron modulation<br />
+                                -	Brain disease/function related data<br />
+                                <br>
+                                <br>
+                                <br>
+                            </td>
+
+                            <td class = "align-top" style="font-size: 20px">-	Brain-based Learning<br />
+                                -	Neuromorphic chips<br />
+                                -	Spiking Neural Networks<br />
+                                -	Network Acceleration<br />
+                                -	Deep learning and representation learning<br />
+                                -	Graph theory and graph mining<br />
+                                -	Knowledge representation, reasoning and logic<br />
+                                -	Agent-based and multi-agent systems<br />
+                                -	Implicit Cognition and Learning<br />
+                                <br>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+        </section>
+
+        <!-- Organizing Committee-->
+        <section class="page-section text-black mb-0" id="organizing_committee">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h1 class="detail p-1 m-1 text-center">Organizing Committee</h1>
+
+                <!-- First Column -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="detail p-3 m-3 text-left">
+<!--                            <img src="path_to_image/quanying_liu.jpg" alt="Quanying Liu">-->
+                            <br>
+                            <a href="https://www.sustech.edu.cn/en/faculties/liuquanying.html">Quanying Liu</a>
+                            <br>
+                            Southern University of Science and Technology, Shenzhen, P. R. China
+                            <br>
+                            liuqy@sustech.edu.cn
+                        </p>
+
+                        <p class="detail p-3 m-3 text-left">
+<!--                            <img src="path_to_image/haiyan_wu.jpg" alt="Haiyan Wu">-->
+                            <br>
+                            <a href="https://www.haiyanwu.net/">Haiyan Wu</a>
+                            <br>
+                            University of Macau, Macau, P. R. China
+                            <br>
+                            haiyanwu@um.edu.mo
+                        </p>
+
+                        <p class="detail p-3 m-3 text-left">
+<!--                            <img src="path_to_image/dan_pan.jpg" alt="Dan Pan">-->
+                            <br>
+                            <a href="https://dxxy.gpnu.edu.cn/info/1135/4406.htm">Dan Pan</a>
+                            <br>
+                            Guangdong Polytechnic Normal University, Guangzhou, P. R. China
+                            <br>
+                            2656351065@qq.com
+                        </p>
+                    </div>
+
+                    <!-- Second Column -->
+                    <div class="col-md-6">
+                        <p class="detail p-3 m-3 text-left">
+<!--                            <img src="path_to_image/yueming_wang.jpg" alt="Yueming Wang">-->
+                            <br>
+                            <a href="https://person.zju.edu.cn/en/ymwang">Yueming Wang</a>
+                            <br>
+                            Zhejiang University, Hangzhou, P. R. China
+                            <br>
+                            ymingwang@zju.edu.cn
+                        </p>
+
+                        <p class="detail p-3 m-3 text-left">
+<!--                            <img src="path_to_image/an_zen.jpg" alt="An Zen">-->
+                            <br>
+                            <a href="https://www.researchgate.net/profile/An_Zeng4">An Zen</a>
+                            <br>
+                            Guangdong University of Technology, Guangzhou, P. R. China
+                            <br>
+                            zengan2010@126.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- Programm Committee-->
+        <section class="page-section text-black mb-0" id="programm_committee">
+    <div class="container">
+        <h1 class="detail p-1 m-1 text-center">Program Committee</h1>
+        <p class="detail p-1 m-1 text-center">(Including full names and affiliations, in alphabetical order by the member's last name)</p>
+        <div class="row">
+            <!-- First Column -->
+            <div class="col-md-6">
+                <ul class="detail p-3 m-3 text-left">
+                    <li><strong>Amy Wenxuan Ding</strong> <br>EMLYON Business School, France</li><br>
+                    <li><strong>Aniruddha Sinha</strong> <br>Tata Consultancy Services, India</li><br>
+                    <li><strong>Bin Hu</strong> <br>Beijing Institute of Technology, Beijing, P. R. China</li><br>
+                    <li><strong>Daqing Guo</strong> <br>University of Electronic Science and Technology of China, Chengdu, P. R. China</li><br>
+                    <li><strong>Haiyan Wu</strong> <br>University of Macau, Macau, P. R. China</li><br>
+                    <li><strong>Jian Liu</strong> <br>University of Birmingham, UK</li><br>
+                    <li><strong>Kai Du</strong> <br>Peking University, Beijing, P. R. China</li><br>
+                    <li><strong>Wanzeng Kong</strong> <br>Hangzhou Dianzhi University, Hangzhou, P. R. China</li><br>
+                    <li><strong>Shurong Liu</strong> <br>Global Biotech Inc, U.S.A</li><br>
+                    <li><strong>Xiaowei Xu</strong> <br>Guangdong Provincial People's Hospital, P. R. China</li><br>
+                    <li><strong>Yalin Wang</strong> <br>Arizona State University, U.S.A</li><br>
+                    <li><strong>Yong He</strong> <br>Beijing Normal University, Beijing, China</li><br>
+                    <li><strong>Yuanyuan Mi</strong> <br>Tsinghua University, Beijing, P. R. China</li><br>
+                </ul>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-md-6">
+                <ul class="detail p-3 m-3 text-left">
+                    <li><strong>An Zeng</strong> <br>Guangdong University of Technology, Guangzhou, P. R. China</li><br>
+                    <li><strong>Benjamin Becker</strong> <br>University of Electronic Science and Technology of China, Chengdu, P. R. China</li><br>
+                    <li><strong>Dan Pan</strong> <br>Guangdong Polytechnic Normal University, Guangzhou, P. R. China</li><br>
+                    <li><strong>Gang Pan</strong> <br>Zhejiang University, Hangzhou, P. R. China</li><br>
+                    <li><strong>Dong Song</strong> <br>University of Southern California, Los Angeles, U.S.A</li><br>
+                    <li><strong>Juyang Weng</strong> <br>Michigan State University, U.S.A</li><br>
+                    <li><strong>Quanying Liu</strong> <br>Southern University of Science and Technology, Shenzhen, P. R. China</li><br>
+                    <li><strong>Xiaowei Song</strong> <br> Simon Fraser University, Canada</li><br>
+                    <li><strong>Yiwen Wang</strong> <br>Hong Kong University of Science and Technology, Kowloon, Hong Kong</li><br>
+                    <li><strong>Yang Zhan</strong> <br>Shenzhen Institutes of Advanced Technology (SIAT) of the Chinese Academy of Science (CAS), Shenzhen, P. R. China</li><br>
+                    <li><strong>Yu Qi</strong> <br> Zhejiang University, Hangzhou, P. R. China</li><br>
+                    <li><strong>Yueming Wang</strong> <br> Zhejiang University, Hangzhou, P. R. China</li><br>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Paper Submission-->
+        <section class="page-section portfolio p-0" id="paper_submission">
+            <div class="container">
+
+
+<h1 class="detail p-1 m-1  text-center" style="font-size:34px">Important Dates</h1>
+
+<p class="detail p-1 m-1  text-center" style="line-height:27px; font-size:23px;line-height: 35px;">
+  <B>Workshop Paper Due Date: </B>  June 14, 2024 <br />
+  <B>Notification of Paper Acceptance: </B>  July 4, 2024 <br />
+  <B>Camera ready papers due: </B>  July 11, 2024 <br />
+  <B>Note</B>: All deadlines are Korean Standard Time (KST), UTC +9, South Korea.<br/>
+</p>
+
+<br><br><br>
+
+
+<h1 class="detail p-1 m-1  text-center" style="font-size:34px">Paper Submission</h1>
+
+<p class="detail p-1 ms-5  text-left" style="line-height:27px; font-size:23px">
+  HBAI will not accept any paper that, at the time of submission, is under review for, has already been published in, or has already been accepted for publication in, a journal or another venue with formally published proceedings.
+</p>
+<p class="detail p-1 ms-5  text-left" style="line-height:27px; font-size:23px">
+At least one author of each accepted paper is required to participate and present the work. We are looking forward to the community meeting in person.
+<!--<a href="https://easychair.org/conferences/?conf=hbai2022">https://easychair.org/conferences/?conf=hbai2022</a>-->
+<!-- electronically using the conference management tool in PDF/DOC format and formatted using the Springer LNAI template.
+<a href="http://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">http://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines</a> -->
+</p>
+<p class="detail p-1 ms-5  text-left" style="line-height:27px; font-size:23px">
+All papers for the review should be submitted through the Conference Management Toolkit (CMT): Coming Soon.
+<!--<a href="https://easychair.org/conferences/?conf=hbai2022">https://easychair.org/conferences/?conf=hbai2022</a>-->
+<!-- electronically using the conference management tool in PDF/DOC format and formatted using the Springer LNAI template.
+<a href="http://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">http://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines</a> -->
+</p>
+<p class="detail" style="line-height:27px; font-size:23px">
+	<B>Formatting guidelines:</B> <br />
+	Full paper: 5-7 pages   (Formatting guidelines: LaTeX styles and Word template:
+    <a href="https://www.ijcai.org/authors_kit" >https://www.ijcai.org/authors_kit</a>)
+	<!-- <button class="button button1">template</button> -->
+	<!-- <button class="button button2">template2</button> -->
+	<br />
+	<!-- Submission will be through the Easychair conference management system: <br />
+	<a href="https://easychair.org/conferences/?conf=hbai2022">https://easychair.org/conferences/?conf=hbai2022</a> -->
+</p>
+
+<p class="detail" style="line-height:27px; font-size:23px">
+	<B>Contact: </B> <br />
+	Quanying Liu: <a>liuqy@sustech.edu.cn</a>
+</p>
+
+
+<br><br><br><br>
+<script type="text/javascript">
+	function download(url)
+	{
+		//url = 'https://raw.githubusercontent.com/hbai2022/hbai2022.github.io/main/README.md'
+		const xhr = new XMLHttpRequest();
+		xhr.open('GET', url)
+		xhr.responseType = 'blob'
+		xhr.send()
+		xhr.onload = function(){
+			const fileBlob = xhr.response;
+			// 将blob转成url地址
+			const fileUrl = URL.createObjectURL(fileBlob)
+			console.log(fileUrl)
+
+			const elementA = document.createElement('a')
+			elementA.setAttribute('href', fileUrl)
+			elementA.innerHTML = '下载'
+			elementA.setAttribute('download', '')
+			elementA.click()
+			//document.body.appendChild(elementA)
+		}
+	}
+	// let imgUrl = 'https://raw.githubusercontent.com/hbai2022/hbai2022.github.io/main/README.md'
+	// download(imgUrl)
+	// document.querySelector("button.button1").onclick = function(){
+	// 	download('https://github.com/hbai2022/hbai2022.github.io/raw/main/FormattingGuidelines-IJCAI-ECAI-22.zip')
+	// }
+	// document.querySelector("button.button2").onclick = function(){
+	// 	download('https://raw.githubusercontent.com/hbai2022/hbai2022.github.io/main/index.html')
+	// }
+</script>
+
+<script language="javascript" type="text/javascript" src="js/footer.js"></script>
+
+            </div>
+        </section>
+
+        <section class="page-section text-black mb-0" id="program">
+            <div class="container">
+                <h1 class="detail p-1 m-1  text-center" style="font-size:30px">Program for HBAI 2022:</h1>
+                <h1 class="detail p-1 m-1  text-center" style="font-size:30px">Third International Workshop on Human Brain and Artificial Intelligence</h1>
+                <h1 class="detail p-1 m-1  text-center" style="font-size:30px">Held in Conjunction With IJCAI-ECAI 2022</h1>
+                <h1 class="detail p-1 m-1  text-center" style="font-size:30px">July 25, 2022, 15:50 pm-23:15 pm, Beijing China (UTC+8)</h1>
+                <h1 class="detail p-1 m-1  text-center" style="font-size:30px">Host: Xiaomin Ying</h1>
+            </div>
+        </section>
+
+        <!-- Program-->
+
+
+         <!-- Sponsors-->
+
+
+        <!-- Footer-->
+        <footer class="footer bg-secondary">
+        <div class="container text-center">
+            <p class = "text-center">@HBAI 2024</p>
+        </div>
+</footer>
+
+    </body>
+</html>
