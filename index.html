@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>HBAI 2024: Joint Workshop on Human Brain and Artificial Intelligence</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/brain.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" /> -->
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <style type="text/css">
+            td{
+                font-size: large;
+            }
+
+            body {
+                    font-family: Arial, sans-serif;
+                    background-color: #ffffff;
+                    /* 没有父元素，无法转换为 em */
+                }
+
+                .lin {
+                    text-align: center;
+                    font-size: 1.5em; /* 24px / 16px = 1.5em */
+                }
+
+                .note {
+                    text-align: center;
+                    color: red;
+                    /* 没有字体大小，无法转换为 em */
+                }
+
+                h1 {
+                    text-align: center;
+                    font-size: 1.875em; /* 30px / 16px = 1.875em */
+                }
+
+                /*th {*/
+                /*    text-align: center;*/
+                /*    !* 没有字体大小，无法转换为 em *!*/
+                /*}*/
+
+                p {
+                    text-align: justify;
+                    margin-left: 6.25em; /* 100px / 16px = 6.25em */
+                    margin-right: 6.25em; /* 100px / 16px = 6.25em */
+                    font-size: 1.4375em; /* 23px / 16px = 1.4375em */
+                }
+
+                /*#home td {*/
+                /*    font-size: 1.125em; !* 18px / 16px = 1.125em *!*/
+                /*}*/
+
+                /*td.option1 {*/
+                /*    padding-left: 3.75em; !* 60px / 16px = 3.75em *!*/
+                /*    padding-right: -0.625em; !* -10px / 16px = -0.625em *!*/
+                /*    font-size: 1em; !* 16px / 16px = 1em *!*/
+                /*}*/
+
+                /*td.option2 {*/
+                /*    padding-left: 0.625em; !* 10px / 16px = 0.625em *!*/
+                /*    padding-right: 0.625em; !* 10px / 16px = 0.625em *!*/
+                /*    font-size: 1em; !* 16px / 16px = 1em *!*/
+                /*}*/
+
+                /*td.option3 {*/
+                /*    padding-left: 0.625em; !* 10px / 16px = 0.625em *!*/
+                /*    padding-right: 0.625em; !* 10px / 16px = 0.625em *!*/
+                /*    font-size: 1em; !* 16px / 16px = 1em *!*/
+                /*}*/
+
+                div.spacer {
+                    width: 100%;
+                    height: 12.5em; /* 200px / 16px = 12.5em */
+                }
+
+                ul {
+                    font-size: 1.4375em; /* 23px / 16px = 1.4375em */
+                    text-align: justify;
+                    margin-left: 6.25em; /* 100px / 16px = 6.25em */
+                    margin-right: 6.25em; /* 100px / 16px = 6.25em */
+                }
+
+
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">HBAI 2024</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto " style="font-size: medium">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#home">Home</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#important_dates">Important Dates</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#paper_submission">Paper Submission</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#organizing_committee">Organizing Committee</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#programm_committee">Programm Committee</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#program">Program</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+<!--        <nav class="navbar navbar-expand-lg bg-secondary  fixed-top" id="mainNav">-->
+<!--            <div class="container justify-content-center">-->
+<!--                <a class="navbar-brand js-scroll-trigger" href="#page-top"  style="font-size:x-large">HBAI 2024</a>-->
+<!--                <button class="navbar-toggler navbar-toggler-right  font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                        <i class="fas fa-bars"></i>-->
+<!--                 </button>-->
+<!--                  <div class="collapse navbar-collapse" id="navbarResponsive">-->
+<!--                        <ul class="navbar-nav ml-auto" style="font-size: medium">-->
+<!--                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#home">Home</a></li>-->
+<!--                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#important dates">Important Dates</a></li>-->
+<!--                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#paper_submission">Paper Submission</a></li>-->
+
+<!--                             <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#organizing_committee">Organizing Committee</a></li>-->
+
+<!--                             <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#programm_committee">Programm Committee</a></li>-->
+<!--                          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#program">Program</a></li>-->
+<!--                </ul>-->
+<!--                 </div>-->
+<!--            </div>-->
+<!--        </nav>-->
+        <!-- Masthead-->
+        <header id = "home" class="masthead text-black mb-0 pb-0">
+            <div class="container text-center" style="text-align: center;">
+                <img class="rounded" src="assets/img/HBAI2024.png" style="display: inline-block; width: 75%; height: 75%">
+            </div>
+        </header>
+        <section class = "page-section text-black mt-0 pb-lg-3 pt-lg-3">
+            <div  class = "container">
+                    <h1 >Call for Papers</h1>
+                    <h4 class="lin"  >HBAI 2024: Joint Workshop on Human Brain and Artificial Intelligence</h4>
+                    <h4 class="lin" >August 3 to 9, 2024 - Jeju, South Korea</h4>
+                    <p class="p-1 m-1" >Welcome to HBAI 2024, joint workshop of the 33rd International Joint Conference on Artificial Intelligence, which is planned to be held in Jeju Island, South Korea, from August 3rd to August 9th, 2024. (<a href="https://ijcai24.org/">IJCAI 2024</a>)! The quest for brain research is to uncover the nature of brain cognition, consciousness, and intelligence. Simultaneously, Artificial Intelligence (AI) strives to craft intelligence within machines. The development of these two fields is undergoing a continuous trend of crossvergence and convergence. To bring together active researchers and practitioners in the frontiers of Artificial Intelligence and Human Brain Research for the presentation of original research results and to provide an opportunity for the exchange and dissemination of innovative research ideas relevant to both fields, we propose this workshop, called Human Brain and Artificial Intelligence (HBAI). HBAI will contribute to answering the following two questions: How can AI techniques help to human brain research (AI- inspired/powered brain research)? And, how can human brain research inspire the study of AI (brain-inspired computing)? The discussion on the workshop will clearly be greatly helpful to the brain and cognitive science, neural computation and artificial general intelligence, brain-machine interface, data science, and their applications. </h6>
+
+                    <h1  >Aims and Scope</h1>
+                    <p class="p-1 m-1">
+                        The advent of cutting-edge technologies for recording brain has catalyzed the creation of extensive data sets, known as "big data." In this landscape, AI has become indispensable for the analysis of sequences, structures, and functional patterns found in human brain data. Such advancements in AI equip us with potent tools and models essential for unraveling the complexities of the brain, significantly enhancing our understanding of human cognition and brain disorders. AI not only facilitates the exploration and understanding of the brain's mechanisms but also, conversely, insights derived from brain research can propel brain-inspired AI studies, offering unique avenues for the development of innovative AI methodologies. This workshop aims to unveil the latest discoveries at the nexus of human brain research and AI, highlighting the synergetic potential that bridges these two domains.
+                    </p>
+
+                    <h1 class="p-1 m-1">Workshop topics</h1>
+                    <p class="p-1 m-1">We encourage papers with important new insights and experiences on artificial intelligence from the modeling and simulation of human brain systems. Those contributions should shed light on one of the two questions mentioned above. Topics of interest lie at the intersection of AI and computational brain science. They include, but are not limited to, the following inter-linked topics:</p>
+                    <br>
+                    <table class = "align-top">
+                        <tr>
+                            <td  class = "align-top"><h3 style="font-size: 25px">AI for brain science: </h3></td>
+                            <td class = "align-top"><h3 style="font-size: 25px ">AI for brain technology: </h3></td>
+                            <td class = "align-top"><h3 style="font-size: 25px ">Brain-inspired AI: </h3></td>
+                        </tr>
+                        <tr>
+                            <td class = "align-top p-3" style="font-size: 20px">- 	Brain development and aging<br />
+                                - 	Brain connectivity and network modeling<br />
+                                -   Brain intelligence paradigms<br />
+                                -  	Neuroinformatics<br />
+                                - 	Learning and memory<br />
+                                - 	Genetic and circuit mechanisms<br />
+                                -	Cognition and behavior<br />
+                                - 	Perception (spatial, temporal) and imagery<br />
+                                - 	Sleep behavior<br />
+                                - 	Hot topics in human brain-related health/diseases/social behavior<br />
+                            </td>
+
+                            <td class = "align-top p-3" style="font-size: 20px">
+                                -	Brain image processing(MRI/fNIRS/fMRI, etc.)<br />
+                                -	Brain network data analysis<br />
+                                -	Brain cognitive data (EEG/eye movement, etc.)<br />
+                                -	Brain imaging genomics<br />
+                                -	Brain-computer Interface<br />
+                                -	Brain stimulation and Neural modulation<br />
+                                -	Brain disease/function/behavior related data<br />
+                                <br>
+                                <br>
+                                <br>
+                            </td>
+
+                            <td class = "align-top p-3" style="font-size: 20px">-	Brain-based Learning<br />
+                                -	Neuromorphic chips<br />
+                                -	Spiking Neural Networks<br />
+                                -	Network Acceleration<br />
+                                -	Deep learning and representation learning<br />
+                                -	Graph theory and graph mining<br />
+                                -	Knowledge representation, reasoning and logic<br />
+                                -	Agent-based and multi-agent systems<br />
+                                -	Implicit Cognition and Learning<br />
+                                <br>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+        </section>
+        <section  class="p-3 m-3" id = "important_dates">
+            <br><br>
+            <div  class = "container">
+                <h1 class="detail p-1 m-1  text-center" style="font-size:34px">Important Dates</h1>
+
+                <p  class="detail p-1 m-1  text-center" style="line-height:27px; font-size:23px;line-height: 35px;">
+                  <B>Workshop Paper Due Date: </B>  June 14, 2024 <br />
+                  <B>Submission Deadline: </B>  July 4, 2024 <br />
+                  <B>Camera Ready Deadline: </B>  July 11, 2024 <br />
+                  <B>Workshop: </B>  August 4, 2024 <br />
+                  <B>Author Notification</B>: All deadlines are Korean Standard Time (KST), UTC +9, South Korea.<br/>
+                </p>
+            </div>
+        </section>
+
+        <section class="p-3 m-3" id="paper_submission">
+                    <br><br>
+            <div  class = "container">
+                <div class="p-3 m-3" >
+                    <h1 class="text-center" style="font-size:34px">Paper Submission</h1>
+                    <p class="detail text-center" style="line-height:27px; font-size:23px">
+                        HBAI will not accept any paper that, at the time of submission, is under review for, has already been published in, or has already been accepted for publication in, a journal or another venue with formally published proceedings.
+                    </p>
+                    <p class="detail text-center" style="line-height:27px; font-size:23px">
+                    At least one author of each accepted paper is required to participate and present the work. We are looking forward to the community meeting in person.
+                    <!--<a href="https://easychair.org/conferences/?conf=hbai2022">https://easychair.org/conferences/?conf=hbai2022</a>-->
+                    <!-- electronically using the conference management tool in PDF/DOC format and formatted using the Springer LNAI template.
+                    <a href="http://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">http://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines</a> -->
+                    </p>
+                    <p class="detail text-center" style="line-height:27px; font-size:23px">
+                    All papers for the review should be submitted through the Conference Management Toolkit (CMT): Coming Soon.
+                    <!--<a href="https://easychair.org/conferences/?conf=hbai2022">https://easychair.org/conferences/?conf=hbai2022</a>-->
+                    <!-- electronically using the conference management tool in PDF/DOC format and formatted using the Springer LNAI template.
+                    <a href="http://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">http://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines</a> -->
+                    </p>
+                    <p class="detail text-center" style="line-height:27px; font-size:23px">
+                        <B>Formatting guidelines:</B> <br />
+                        Full paper: 5-7 pages   (Formatting guidelines: LaTeX styles and Word template:
+                        <a href="https://www.ijcai.org/authors_kit" >https://www.ijcai.org/authors_kit</a>)
+                        <!-- <button class="button button1">template</button> -->
+                        <!-- <button class="button button2">template2</button> -->
+                        <br />
+                        <!-- Submission will be through the Easychair conference management system: <br />
+                        <a href="https://easychair.org/conferences/?conf=hbai2022">https://easychair.org/conferences/?conf=hbai2022</a> -->
+                    </p>
+                    <p class="detail text-center" style="line-height:27px; font-size:23px">
+                        <B>Contact: </B> <br />
+                        Quanying Liu: <a>liuqy@sustech.edu.cn</a>
+                    </p>
+                  </div>
+                </div>
+            </section>
+        <!-- Organizing Committee-->
+        <section class="page-section text-black mb-0 pb-lg-3 pt-lg-3" id="organizing_committee">
+            <br><br>
+
+            <div class="container">
+                <!-- About Section Heading-->
+                <h1 class="detail p-1 m-1 text-center">Organizing Committee</h1>
+
+
+<!--                &lt;!&ndash; First Column &ndash;&gt;-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-6">-->
+<!--                        <p class="detail p-3 m-3 text-left">-->
+<!--&lt;!&ndash;                            <img src="path_to_image/quanying_liu.jpg" alt="Quanying Liu">&ndash;&gt;-->
+<!--                            <br>-->
+<!--                            <a href="https://www.sustech.edu.cn/en/faculties/liuquanying.html">Quanying Liu</a>-->
+<!--                            <br>-->
+<!--                            Southern University of Science and Technology, Shenzhen, P. R. China-->
+<!--                            <br>-->
+<!--                            liuqy@sustech.edu.cn-->
+<!--                        </p>-->
+
+<!--                        <p class="detail p-3 m-3 text-left">-->
+<!--&lt;!&ndash;                            <img src="path_to_image/haiyan_wu.jpg" alt="Haiyan Wu">&ndash;&gt;-->
+<!--                            <br>-->
+<!--                            <a href="https://www.haiyanwu.net/">Haiyan Wu</a>-->
+<!--                            <br>-->
+<!--                            University of Macau, Macau, P. R. China-->
+<!--                            <br>-->
+<!--                            haiyanwu@um.edu.mo-->
+<!--                        </p>-->
+
+<!--                        <p class="detail p-3 m-3 text-left">-->
+<!--&lt;!&ndash;                            <img src="path_to_image/dan_pan.jpg" alt="Dan Pan">&ndash;&gt;-->
+<!--                            <br>-->
+<!--                            <a href="https://dxxy.gpnu.edu.cn/info/1135/4406.htm">Dan Pan</a>-->
+<!--                            <br>-->
+<!--                            Guangdong Polytechnic Normal University, Guangzhou, P. R. China-->
+<!--                            <br>-->
+<!--                            2656351065@qq.com-->
+<!--                        </p>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Second Column &ndash;&gt;-->
+<!--                    <div class="col-md-6">-->
+<!--                        <p class="detail p-3 m-3 text-left">-->
+<!--&lt;!&ndash;                            <img src="path_to_image/yueming_wang.jpg" alt="Yueming Wang">&ndash;&gt;-->
+<!--                            <br>-->
+<!--                            <a href="https://person.zju.edu.cn/en/ymwang">Yueming Wang</a>-->
+<!--                            <br>-->
+<!--                            Zhejiang University, Hangzhou, P. R. China-->
+<!--                            <br>-->
+<!--                            ymingwang@zju.edu.cn-->
+<!--                        </p>-->
+
+<!--                        <p class="detail p-3 m-3 text-left">-->
+<!--&lt;!&ndash;                            <img src="path_to_image/an_zen.jpg" alt="An Zen">&ndash;&gt;-->
+<!--                            <br>-->
+<!--                            <a href="https://www.researchgate.net/profile/An_Zeng4">An Zen</a>-->
+<!--                            <br>-->
+<!--                            Guangdong University of Technology, Guangzhou, P. R. China-->
+<!--                            <br>-->
+<!--                            zengan2010@126.com-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-1">
+    </div>
+        <div class="col-md-10">
+
+  <div class="row justify-content-center text-center">
+
+    <table class="table table-hover table-borderless">
+      <tbody>
+        <tr>
+          <td>Quanying Liu</td>
+          <td>Southern University of Science and Technology</td>
+          <td>liuqy@sustech.edu.cn</td>
+        </tr>
+        <tr>
+          <td>Haiyan Wu</td>
+          <td>University of Macau</td>
+          <td>haiyanwu@um.edu.mo</td>
+        </tr>
+        <tr>
+          <td>An Zeng</td>
+          <td>Guangdong University of Technology</td>
+          <td>zengan2010@126.com</td>
+        </tr>
+        <tr>
+          <td>Dan Pan</td>
+          <td>Guangdong Polytechnic Normal University</td>
+          <td>pandan2006@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Yu Qi</td>
+          <td>Zhejiang University</td>
+          <td>qiyu@zju.edu.cn</td>
+        </tr>
+        <tr>
+          <td>Youzhi Qu</td>
+          <td>Southern University of Science and Technology</td>
+          <td>quyz@mail.sustech.edu.cn</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+                </div>
+            <div class="col-md-1">
+    </div>
+</div>
+<!--            <div class="container">-->
+<!--&lt;!&ndash;                <div class="col-md-0.5">&ndash;&gt;-->
+<!--&lt;!&ndash;	            </div>&ndash;&gt;-->
+<!--                <div class="row justify-content-center text-center">-->
+<!--                <table class="table table-borderless table-hover ml-lg-8 mx-auto">-->
+<!--              <tbody >-->
+<!--                <tr>-->
+<!--                  <td>Quanying Liu</td>-->
+<!--                  <td>Southern University of Science and Technology</td>-->
+<!--                  <td>liuqy@sustech.edu.cn</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <td>Haiyan Wu</td>-->
+<!--                  <td>University of Macau</td>-->
+<!--                  <td>haiyanwu@um.edu.mo</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <td>An Zeng</td>-->
+<!--                  <td> Guangdong University of Technology</td>-->
+<!--                  <td>zengan2010@126.com</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <td>Dan Pan</td>-->
+<!--                  <td>Guangdong Polytechnic Normal University</td>-->
+<!--                  <td>pandan2006@gmail.com</td>-->
+
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <td>Yu Qi</td>-->
+<!--                  <td>Zhejiang University</td>-->
+<!--                  <td>qiyu@zju.edu.cn</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <td>Youzhi Qu</td>-->
+<!--                  <td>Southern University of Science and Technology</td>-->
+<!--                  <td>Beijing Institute of Technology, Beijing, P. R. China</td>-->
+<!--                </tr>-->
+<!--              </tbody>-->
+<!--            </table>-->
+<!--            </div>-->
+<!--&lt;!&ndash;                <div class="col-md-0.5">&ndash;&gt;-->
+<!--&lt;!&ndash;	            </div>&ndash;&gt;-->
+<!--            </div>-->
+
+        </section>
+         <!-- Programm Committee-->
+        <section class="page-section text-black mb-0 pb-lg-3 pt-lg-3 text-large" id="programm_committee">
+            <br><br>
+
+
+
+    <div class="container">
+        <h1 class="detail p-1 m-1 text-center">Program Committee</h1>
+        <p class="detail p-1 m-1 text-center">(Including full names and affiliations, in alphabetical order by the member's first name)</p>
+<!--        <div class="row align-top">-->
+<!--            &lt;!&ndash; First Column &ndash;&gt;-->
+<!--            <div class="col-md-6 align-top">-->
+<!--                <ul class="detail p-1 m-1 text-left">-->
+<!--                    <li ><strong>Benjamin, Becker</strong> <br>University of Electronic Science and Technology of China, Chengdu, P. R. China</li><br>-->
+<!--                    <li ><strong>Kai Du</strong> <br>Peking University, Beijing, P. R. China</li><br>-->
+<!--                    <li><strong>Yong He</strong> <br>Beijing Normal University, Beijing, China</li><br>-->
+<!--                    <li><strong>Wanzeng Kong</strong> <br>Hangzhou Dianzi University, Hangzhou, P. R. China</li><br>-->
+<!--                    <li><strong>Quanying Liu</strong> <br>Southern University of Science and Technology, Shenzhen, P. R. China</li><br>-->
+<!--                    <li><strong>Dan Pan</strong> <br>Guangdong Polytechnic Normal University, Guangzhou, P. R. China</li><br>-->
+<!--                    <li><strong>Yu Qi</strong> <br>Zhejiang University, Hangzhou, P. R. China</li><br>-->
+<!--                    <li><strong>Aniruddha Sinha</strong> <br>Tata Consultancy Services, India</li><br>-->
+<!--                    <li><strong>Yalin Wang</strong> <br>Arizona State University, U.S.A</li><br>-->
+<!--                    <li><strong>Yueming Wang</strong> <br>Zhejiang University, Hangzhou, P. R. China</li><br>-->
+<!--                    <li><strong>Haiyan Wu</strong> <br>University of Macau, Macau, P. R. China</li><br>-->
+<!--                    <li><strong>An Zeng</strong> <br>Guangdong University of Technology, Guangzhou, P. R. China</li><br>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Second Column &ndash;&gt;-->
+<!--            <div class="col-md-6 align-top">-->
+<!--                <ul class="detail p-1 m-1 text-left">-->
+<!--                    <li ><strong>Amy Wenxuan Ding</strong> <br>EMLYON Business School, France</li><br>-->
+<!--                    <li ><strong>Daqing Guo</strong> <br> University of Electronic Science and Technology of China, Chengdu, P. R. China</li><br>-->
+<!--                    <li><strong>Bin Hu</strong> <br>Beijing Institute of Technology, Beijing, P. R. China</li><br>-->
+<!--                    <li><strong>Jian Liu</strong> <br> University of Birmingham, UK</li><br>-->
+<!--                    <li><strong>Yuanyuan Mi</strong> <br>Tsinghua University, Beijing, P. R. China</li><br>-->
+<!--                    <li><strong>Gang Pan</strong> <br>Zhejiang University, Hangzhou, P. R. China</li><br>-->
+<!--                    <li><strong>Yiyu Shi</strong> <br>University of Norte Dame, U.S.A</li><br>-->
+<!--                    <li><strong>Xiaowei Song</strong> <br> Simon Fraser University, Canada</li><br>-->
+<!--                    <li><strong>Yiwen Wang</strong> <br>Hong Kong University of Science and Technology, Kowloon, Hong Kong</li><br>-->
+<!--                    <li><strong>Juyang Weng</strong> <br>Michigan State University, U.S.A</li><br>-->
+<!--                    <li><strong>Xiaowei Xu</strong> <br> Guangdong Provincial People's Hospital, P. R. China</li><br>-->
+<!--                    <li><strong>Yang Zhan</strong> <br> Shenzhen Institutes of Advanced Technology (SIAT) of the Chinese Academy of Science (CAS), Shenzhen, P. R. China</li><br>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+         <div class="row">
+         <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+                <div class="row justify-content-center text-center">
+                    <table class="table table-borderless table-hover ml-lg-8 mx-auto" >
+              <tbody >
+                <tr>
+                  <td>Amy Wenxuan Ding</td>
+                  <td>EMLYON Business School, France</td>
+                </tr>
+                <tr>
+                  <td>An Zeng</td>
+                  <td>Guangdong University of Technology, Guangzhou, P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Aniruddha Sinha</td>
+                  <td>Tata Consultancy Services, India</td>
+                </tr>
+                <tr>
+                  <td>Benjamin Becker</td>
+                  <td>University of Electronic Science and Technology of China, Chengdu, P. R. China</td>
+                </tr><tr>
+                  <td>Bin Hu</td>
+                  <td>Beijing Institute of Technology, Beijing, P. R. China</td>
+                    <tr>
+                  <td>Bo Hong</td>
+                  <td>Tsinghua University, Beijing, P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Changsong Zhou</td>
+                  <td>Hong Kong Baptist University,P. R. China</td>
+                </tr>
+                </tr>
+                <tr>
+                  <td>Dan Pan</td>
+                  <td>Guangdong Polytechnic Normal University, Guangzhou, P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Daqing Guo</td>
+                  <td>University of Electronic Science and Technology of China, Chengdu, P. R. China</td>
+                </tr>
+                <tr>
+                  <td>DeZhong Yao</td>
+                  <td>University of Electronic Science and Technology of China,Chengdu, Sichuan, P.R.China</td>
+                </tr>
+                <tr>
+                  <td>Gang Pan</td>
+                  <td>Zhejiang University, Hangzhou, P. R. China</td>
+                </tr><tr>
+                  <td>Haiyan Wu</td>
+                  <td>University of Macau, Macau, P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Huiguang He</td>
+                  <td>University of Chinese Academy of Science,Beijing P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Jia Liu</td>
+                  <td>Tsinghua University, Beijing, P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Jian Liu</td>
+                  <td>University of Birmingham, UK</td>
+                </tr><tr>
+                  <td>Juyang Weng</td>
+                  <td>Michigan State University, U.S.A</td>
+                </tr><tr>
+                  <td>Kai Du</td>
+                  <td>Peking University, Beijing, P. R. China</td>
+                </tr><tr>
+                  <td>Quanying Liu</td>
+                  <td>Southern University of Science and Technology, Shenzhen, P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Qunxi Dong</td>
+                  <td>Beijing Institute of Technology, Beijing, P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Si Wu</td>
+                  <td>Peking University, Beijing, P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Tianzi Jiang</td>
+                  <td>Chinese Academy of Science, P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Wanzeng Kong</td>
+                  <td>Hangzhou Dianzi University, Hangzhou, P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Xiaolin Hu</td>
+                  <td>Tsinghua University, Beijing, P. R. China</td>
+                </tr>
+              <tr>
+                  <td>Xiaowei Song</td>
+                  <td>Simon Fraser University, Canada</td>
+                </tr>
+              <tr>
+                  <td>Xiaowei Xu</td>
+                  <td>Guangdong Provincial People's Hospital, P. R. China</td>
+                </tr>
+              <tr>
+                  <td>Yalin Wang</td>
+                  <td>Arizona State University, U.S.A</td>
+                </tr>
+              <tr>
+                  <td>Yang Zhan</td>
+                  <td>Shenzhen Institutes of Advanced Technology (SIAT) of the Chinese Academy of Science (CAS), Shenzhen, P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Yina Wei</td>
+                  <td>Zhejiang Lab, Hangzhou, P. R. China</td>
+                </tr>
+                  <td>Yiwen Wang</td>
+              <tr>
+                  <td>Hong Kong University of Science and Technology, Kowloon, Hong Kong,P. R. China</td>
+                </tr>
+              <tr>
+                  <td>Yiyu Shi</td>
+                  <td>University of Norte Dame, U.S.A</td>
+                </tr>
+              <tr>
+                  <td>Yong He</td>
+                  <td>Beijing Normal University, Beijing,P. R. China</td>
+                </tr>
+                <tr>
+                  <td>Yu Hu</td>
+                  <td>Hong Kong University of Science and Technology,P. R. China</td>
+                </tr>
+
+               <tr>
+                  <td>Yu Qi</td>
+                  <td>Zhejiang University, Hangzhou, P. R. China</td>
+                </tr>
+               <tr>
+                  <td>Yuanyuan Mi</td>
+                  <td>Tsinghua University, Beijing, P. R. China</td>
+                </tr>
+              <tr>
+                  <td>Yueming Wang</td>
+                  <td>Zhejiang University, Hangzhou, P. R. China</td>
+                </tr>
+              <tr>
+                  <td>Zhiguo Zhang</td>
+                  <td>Harbin Institute of Technology, Shenzhen, P. R. China</td>
+                </tr>
+              <tr>
+                  <td>Zhuliang Yu</td>
+                  <td>South China University of Thchnology, P. R. China</td>
+                </tr>
+
+              </tbody>
+            </table>
+                    </div>
+            </div>
+         <div class="col-md-1">
+        </div>
+            </div>
+            </div>
+</section>
+
+
+        <section class="page-section text-black mb-0" id="program">
+            <div class="container">
+                <h1 class="detail p-1 m-1  text-center" style="font-size:30px">Program for HBAI 2022:</h1>
+                <h1 class="detail p-1 m-1  text-center" style="font-size:30px">Third International Workshop on Human Brain and Artificial Intelligence</h1>
+                <h1 class="detail p-1 m-1  text-center" style="font-size:30px">Held in Conjunction With IJCAI 2024</h1>
+<!--                <h1 class="detail p-1 m-1  text-center" style="font-size:30px">July 25, 2022, 15:50 pm-23:15 pm, Beijing China (UTC+8)</h1>-->
+                <h1 class="detail p-1 m-1  text-center" style="font-size:30px">Host: Quanying Liu</h1>
+            </div>
+        </section>
+                <!-- Footer-->
+        <footer class="footer bg-secondary">
+            <div class="container text-center">
+                <p class = "text-center">@HBAI 2024</p>
+            </div>
+        </footer>
+        <!-- Paper Submission-->
+<!--        <section class="page-section portfolio " id="paper_submission">-->
+  <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+	function download(url)
+	{
+		//url = 'https://raw.githubusercontent.com/hbai2022/hbai2022.github.io/main/README.md'
+		const xhr = new XMLHttpRequest();
+		xhr.open('GET', url)
+		xhr.responseType = 'blob'
+		xhr.send()
+		xhr.onload = function(){
+			const fileBlob = xhr.response;
+			// 将blob转成url地址
+			const fileUrl = URL.createObjectURL(fileBlob)
+			console.log(fileUrl)
+
+			const elementA = document.createElement('a')
+			elementA.setAttribute('href', fileUrl)
+			elementA.innerHTML = '下载'
+			elementA.setAttribute('download', '')
+			elementA.click()
+			//document.body.appendChild(elementA)
+		}
+	}
+	// let imgUrl = 'https://raw.githubusercontent.com/hbai2022/hbai2022.github.io/main/README.md'
+	// download(imgUrl)
+	// document.querySelector("button.button1").onclick = function(){
+	// 	download('https://github.com/hbai2022/hbai2022.github.io/raw/main/FormattingGuidelines-IJCAI-ECAI-22.zip')
+	// }
+	// document.querySelector("button.button2").onclick = function(){
+	// 	download('https://raw.githubusercontent.com/hbai2022/hbai2022.github.io/main/index.html')
+	// }
+</script>
+<script language="javascript" type="text/javascript" src="js/footer.js"></script>
+
+
+
+        <!-- Program-->
+
+
+         <!-- Sponsors-->
+
+
+
+
+    </body>
+</html>
