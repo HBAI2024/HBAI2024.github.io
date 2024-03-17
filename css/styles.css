@@ -85,10 +85,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+  font-size:22px;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 1200px) {
+
+  html, body, p{
+    font-size: 18px;
+  }
+ }
+ 
+@media screen and (max-width: 992px) { 
+  html, body, p{
+    font-size: 18px;
+  }
+ }
+
+@media screen and (max-width: 768px) { 
+
+ html, body, p{
+    font-size: 18px;
+  }
+}
+
+
+ @media screen and (max-width: 576px) { 
+  html, body, p{
+    font-size: 18px;
+  }
+  }
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
